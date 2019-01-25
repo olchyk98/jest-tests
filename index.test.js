@@ -11,3 +11,7 @@ test('Test if 2 + 2 NOT equal 5', () => {
 test('Test if returns null', () => {
     expect( functions.returnValue(null) ).toBeNull();
 });
+
+test('Test if returns undefined', () => {
+    expect( functions.returnValue(undefined) ).toBeUndefined();
+});
