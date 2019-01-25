@@ -6,7 +6,8 @@ const functions = {
     fetchPhoto() {
         return axios('https://jsonplaceholder.typicode.com/photos/1')
         .then(({ data }) => data).catch(console.error)
-    }
+    },
+    reverseString: a => a.split('').reverse().join('')
 }
 
 module.exports = functions;

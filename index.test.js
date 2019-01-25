@@ -51,3 +51,11 @@ test('Photo fetched albumId should be 1', () => {
         expect(data.albumId.toString()).toBe("1")
     })
 });
+
+test('Check if reverse string function exists', () => {
+    expect(functions.reverseString).toBeDefined();
+});
+
+test('Check if reverse string function works correctly', () => {
+    expect(functions.reverseString('hello')).toBe('olleh');
+});
