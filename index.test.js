@@ -31,3 +31,7 @@ test('Check if the person is Oles Odynets', () => {
         surname: "Odynets"
     });
 });
+
+test('Should be under 16 years old', () => {
+    expect( functions.returnValue(7) ).toBeLessThan(16);
+});
