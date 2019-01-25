@@ -15,3 +15,7 @@ test('Test if returns null', () => {
 test('Test if returns undefined', () => {
     expect( functions.returnValue(undefined) ).toBeUndefined();
 });
+
+test('Test if it is falsy', () => {
+    expect( functions.returnValue(false) ).toBeFalsy();
+});
