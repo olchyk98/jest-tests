@@ -33,5 +33,11 @@ test('Check if the person is Oles Odynets', () => {
 });
 
 test('Should be under 16 years old', () => {
-    expect( functions.returnValue(7) ).toBeLessThan(16);
+    expect( functions.returnValue(7) ).toBeLessThan(16); // WARNING: 16 [!]< 16
 });
+
+// /\d/ - decimal
+test('There is no number in the a name', () => {
+    expect( functions.returnValue("SuperHero_") ).not.toMatch(/\d/);
+});
+
