@@ -19,3 +19,15 @@ test('Test if returns undefined', () => {
 test('Test if it is falsy', () => {
     expect( functions.returnValue(false) ).toBeFalsy();
 });
+
+test('Check if the person is Oles Odynets', () => {
+    expect(
+        functions.returnValue({
+            name: "Oles",
+            surname: "Odynets"
+        })
+    ).toEqual({
+        name: "Oles",
+        surname: "Odynets"
+    });
+});
