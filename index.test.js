@@ -41,3 +41,13 @@ test('There is no number in the a name', () => {
     expect( functions.returnValue("SuperHero_") ).not.toMatch(/\d/);
 });
 
+test('oles should be in usernames', () => {
+    expect(['karin', 'superhero_23', '_fork_', 'oles']).toContain('oles');
+});
+
+test('Photo fetched albumId should be 1', () => {
+    expect.assertions(1); // QUESTION: Number of all active promises // Still pass without this line.
+    return functions.fetchPhoto().then(data => {
+        expect(data.albumId.toString()).toBe("1")
+    })
+});
